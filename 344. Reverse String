@@ -1,0 +1,16 @@
+class Solution {
+    public void reverseString(char[] s) {
+    
+        char firstLetter = ' ';
+        char lastLetter =  ' ';
+        for(int i=0; i < s.length/2; i++){
+
+            firstLetter = s[(s.length - i)-1];
+            lastLetter = s[i];
+
+            s[i] = firstLetter;
+            s[(s.length - i)-1] = lastLetter;
+            
+        }
+    }
+}
